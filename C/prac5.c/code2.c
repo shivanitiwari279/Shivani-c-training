@@ -15,25 +15,17 @@
 
 //   }
 
-#include<stdio.h>
-int main(){
-    int arr[5]={1,2,3,4,5};
-    int check=1;
-    for (int i = 0; i < 5/2 ; i++)
-    {
-        if (arr[i]!=arr[5-1-i])
-        {
-          check=0;
-          break;
-        }
-        
-    }
-    if (check)
-    {
-       printf("yes it is !");
-    }
-    else{
-        printf("No, it's not !");
-    }
+// 
 
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int arr[5]={10,20,30,40,50};
+//     int f=arr[0];
+//     for (int i = 0; i < 5; i++)
+//     {
+//         arr[i]=arr[i+1];
+//         printf("%d\n" , arr[i]);
+//     }
+//     arr[4]=f;
+// 
