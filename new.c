@@ -26,17 +26,89 @@
 //     return a*b ;
 // }
 
+// #include<stdio.h>
+
+// void calculateprice(float value);
+
+// int main(){
+//     float value = 100.00;
+//     calculateprice(value);
+
+// }
+
+// void calculateprice(float value){
+//     value= value +( 0.18*value);
+//     printf("%d" , value);
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int arr[4];
+//     for (int i = 0; i < 4; i++)
+//     {
+//      printf("Enter element no :%d\n", i+1);
+//      scanf("%d", &arr[i]);
+//     }
+    
+//     printf("%d",arr[2]);
+    
+// }
+
+// REVERSE
+
+// #include<stdio.h>
+// int main(){
+//     int arr[4];
+//     for (int i = 0; i <= 3; i++)
+//     {
+//      printf("Enter element no :%d\n", i+1);
+//      scanf("%d", &arr[i]);
+//     }
+
+//     for (int i = 3; i >=0; i--)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+// } 
+
+// #include<stdio.h>
+// int main(){
+//     int marks[6]={89,45,32,90,19,20};
+//     for (int i = 0; i < 6; i++)
+//     {
+//         if (marks[i]<35)
+//         {
+//            printf("%d ", marks[6]);
+//         }
+        
+//     }
+    
+// }
+
+// ADDRESS
+
+// #include<stdio.h>
+// int main(){
+//     int arr[6]={2,4,5,7,1,8};
+//     printf("%p\n",&arr[0]);
+//     printf("%p\n",&arr[1]);
+//     printf("%p\n",&arr[2]);
+//     printf("%p\n",&arr[3]);
+//     printf("%p\n",&arr[4]);
+//     printf("%p\n",&arr[5]);
+
+// }
+
+// PRODUCT OF AN ARRAY
+
 #include<stdio.h>
-
-void calculateprice(float value);
-
 int main(){
-    float value = 100.00;
-    calculateprice(value);
-
-}
-
-void calculateprice(float value){
-    value= value +( 0.18*value);
-    printf("%d" , value);
+    int arr[5]={1,3,6,8,2};
+    int product=1;
+    for (int i = 0; i < 5; i++)
+    {
+        product=product*arr[i];
+    }
+    printf("%d",product);
+    
 }
