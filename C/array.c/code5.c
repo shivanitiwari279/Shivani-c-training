@@ -21,23 +21,48 @@
 
 //SUM EQUAL TO GIVEN NO
 
+// #include<stdio.h>
+// int main(){
+//     int arr[8]={1,2,3,4,5,6,7,8};
+//     int totalpair=0;
+//     int x=12;
+//     for (int i = 0; i < 8; i++)
+//     {
+//        for (int j = i+1; j < 8; j++)
+//        {
+//         if (arr[i]+arr[j]==x)
+//         {
+//           totalpair++;
+//           printf("(%d %d)\n", arr[i], arr[j]);
+//         }
+        
+//        }
+        
+//     }  
+//    printf("%d ",totalpair); 
+// }
+
 #include<stdio.h>
 int main(){
-    int arr[8]={1,2,3,4,5,6,7,8};
-    int totalpair=0;
-    int x=12;
-    for (int i = 0; i < 8; i++)
+    int arr[12]={1,2,3,4,5,6,7,8,9,10,11,12};
+    int pairs;
+    int x=30;
+    for (int i = 0; i < 12; i++)
     {
-       for (int j = i+1; j < 8; j++)
+       for (int j = i+1; j < 12; j++)
        {
-        if (arr[i]+arr[j]==x)
+        for (int k = i+2; k < 12; k++)
         {
-          totalpair++;
-          printf("(%d %d)\n", arr[i], arr[j]);
+           if (arr[i]+arr[j]+arr[k]==x)
+           {
+            pairs++;
+            printf("(%d %d %d)\n",arr[i],arr[j],arr[k]);
+           } 
         }
-        
+           
        }
         
-    }  
-   printf("%d ",totalpair); 
-}
+    }
+       
+    printf("%d",pairs);
+} 
