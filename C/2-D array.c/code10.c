@@ -25,3 +25,6 @@ printf("%d ", arr[i][left]);
 left++;    
 }   
  }
+
+
+ 
