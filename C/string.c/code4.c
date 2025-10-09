@@ -12,9 +12,9 @@ int main(){
         {
            newstr[j]=str[i];
            j++;
-           printf("%c",newstr[j]);
+         
         }
-        
+        printf("%c",newstr[j]);
     }
     
 
