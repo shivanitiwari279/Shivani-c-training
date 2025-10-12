@@ -12,7 +12,7 @@ int main(){
                 str[j]=temp;
             }
         }
-       
+       printf("%c",str[i]); 
     }
-    printf("%c",str); 
+    
 }

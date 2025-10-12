@@ -28,3 +28,4 @@ int main()
         printf("%d\n" , arr[i]);
     }
     arr[4]=f;
+}
