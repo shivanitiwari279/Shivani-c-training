@@ -3,17 +3,17 @@
 #include <stdio.h>
 
 int main() {
-    int arr[8] = {2, 3, 5, -1, 6, -4, 7, -2};  
-    int left=0;
-    int right = 0; 
+    int arr[8] = {2, -3, 5, -1, 6, -4, 7, -2};  
+    int i= 0;
+    int j = 0;
     int temp;
-    int i;
+
     for (i = 0; i < 8; i++) {
-        if (arr[left] < 0) {
-            temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-            right++;
+        if (arr[i] < 0) {
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            j++;
         }
     }
 
