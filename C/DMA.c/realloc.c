@@ -3,20 +3,21 @@
 
 int main(){
     int n;
+    int *arr;
     printf("Enter size: ");
     scanf("%d",&n);
-    int *arr=(int *)malloc(n * sizeof(int));
+    arr=(int *)malloc(n * sizeof(int));
 
-    printf("Enter %d element:\n",n);
+    printf("Enter %d elements:\n",n);
     for (int i = 0; i < n; i++)
     {
-      scanf("%d\n",&arr[i]);
+      scanf("%d",&arr[i]);
     
     }
     printf("Enter new size: ");
     int newsize;
     scanf("%d",&newsize);
-    int *arr=(int *)realloc(arr,newsize * sizeof(int));
+    arr=(int *)realloc( arr,newsize * sizeof(int));
 
     printf("Enter %d new element:\n",newsize-n);
     for (int i = n; i < newsize; i++)
@@ -26,7 +27,7 @@ int main(){
     printf("Updated array:\n");
     for (int i = 0; i < newsize; i++)
     {
-      printf("%d",arr[i]);
+      printf("%d\n",arr[i]);
     }
     free(arr);
  }
