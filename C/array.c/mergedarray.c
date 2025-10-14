@@ -22,5 +22,4 @@ int main() {
     for (int k = 0; k < a[3]+b[4]; k++) {
         printf("%d ", merged[k]);
     }
-
 }
