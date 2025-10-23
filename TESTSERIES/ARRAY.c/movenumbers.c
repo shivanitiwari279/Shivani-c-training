@@ -1,7 +1,4 @@
-
-
 #include <stdio.h>
-
 int main() {
     int arr[8] = {2, -3, 5, -1, 6, -4, 7, -2};  
     int i= 0;
