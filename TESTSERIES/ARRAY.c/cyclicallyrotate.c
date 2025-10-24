@@ -6,7 +6,7 @@ int main() {
 
     for (int i = 4; i > 0; i--)
         arr[i] = arr[i - 1];
-    arr[0] = last;
+        arr[0] = last;
 
     printf("Rotated Array: ");
     for (int i = 0; i < 5; i++)

@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int arr[] = {7, 10, 4, 3, 20, 15};
+    int arr[6] = {7, 10, 4, 3, 20, 15};
     int k = 3;
     int i, j, temp;
 

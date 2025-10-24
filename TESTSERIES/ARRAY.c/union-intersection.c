@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     int a[4] = {1, 2, 4, 5};
     int b[4] = {2, 3, 5, 6};
@@ -12,8 +11,14 @@ int main() {
     for (int i = 0; i < 4; i++) {
         int found = 0;
         for (int j = 0; j < 4; j++)
-            if (b[i] == a[j]) found = 1;
-        if (!found) printf("%d ", b[i]);
+            if (b[i] == a[j]) 
+            {
+                found = 1;
+            }
+        if (!found) 
+        {
+            printf("%d ", b[i]);
+        }
     }
 
     printf("\nIntersection: ");

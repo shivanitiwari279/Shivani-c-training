@@ -2,7 +2,7 @@
 int main(){
     int arr[7]={1,2,3,2,1,2,4};
     int x;
-    int frequancy=0;
+    int occurrence=0;
     printf("Enter an element :",x);
     scanf("%d",&x);
 
@@ -11,11 +11,11 @@ int main(){
         if (arr[i]==x)
         {
            arr[i]=x;
-           frequancy++; 
+           occurrence++; 
         }
         
     }
-        printf("element %d occure %d times\n",x,frequancy);
+        printf("element %d occure %d times\n",x,occurrence);
     
 }
 
